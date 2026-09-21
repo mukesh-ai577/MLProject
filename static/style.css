@@ -1,0 +1,630 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eef2ff 0%,
+            #f8f9ff 50%,
+            #edf6ff 100%
+        );
+
+    color: #172554;
+
+    padding: 30px 20px;
+}
+
+
+/* =========================
+   PAGE CONTAINER
+========================= */
+
+.page-container {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero-section {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 35px 40px;
+
+    margin-bottom: 28px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eef2ff,
+            #f6f8ff
+        );
+
+    border: 1px solid #dce4ff;
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 12px 35px rgba(55, 70, 150, 0.08);
+}
+
+
+.hero-content {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+}
+
+
+.icon-circle {
+
+    width: 68px;
+    height: 68px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #5b45e6,
+            #4778f5
+        );
+
+    font-size: 32px;
+
+    box-shadow:
+        0 8px 20px rgba(82, 75, 220, 0.25);
+}
+
+
+.hero-section h1 {
+
+    font-size: 36px;
+
+    color: #172554;
+
+    margin-bottom: 10px;
+}
+
+
+.hero-section p {
+
+    color: #64748b;
+
+    font-size: 16px;
+
+    line-height: 1.6;
+
+    max-width: 800px;
+}
+
+
+.hero-book {
+
+    font-size: 78px;
+
+    opacity: 0.9;
+}
+
+
+/* =========================
+   MAIN CARD
+========================= */
+
+.main-card {
+
+    background: #ffffff;
+
+    padding: 38px;
+
+    border-radius: 22px;
+
+    border: 1px solid #e2e8f0;
+
+    box-shadow:
+        0 15px 40px rgba(40, 60, 130, 0.09);
+}
+
+
+/* =========================
+   SECTION HEADING
+========================= */
+
+.section-heading {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 16px;
+
+    margin-bottom: 35px;
+}
+
+
+.section-icon {
+
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #5b45e6,
+            #4778f5
+        );
+
+    color: white;
+
+    font-size: 24px;
+}
+
+
+.section-heading h2 {
+
+    color: #1e2a63;
+
+    font-size: 26px;
+
+    margin-bottom: 6px;
+}
+
+
+.section-heading p {
+
+    color: #64748b;
+
+    font-size: 15px;
+}
+
+
+/* =========================
+   FORM GRID
+========================= */
+
+.form-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 24px 28px;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   FORM GROUP
+========================= */
+
+.form-group {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+
+/* =========================
+   LABEL
+========================= */
+
+.form-group label {
+
+    color: #27345f;
+
+    font-size: 15px;
+
+    font-weight: 600;
+}
+
+
+/* =========================
+   INPUT + SELECT
+========================= */
+
+.form-control {
+
+    width: 100%;
+
+    height: 52px;
+
+    padding: 0 15px;
+
+    background: #ffffff;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 11px;
+
+    outline: none;
+
+    color: #334155;
+
+    font-size: 15px;
+
+    transition:
+        border-color 0.25s ease,
+        box-shadow 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+.form-control:hover {
+
+    border-color: #818cf8;
+}
+
+
+.form-control:focus {
+
+    border-color: #6366f1;
+
+    box-shadow:
+        0 0 0 4px rgba(99, 102, 241, 0.11);
+}
+
+
+.form-control::placeholder {
+
+    color: #94a3b8;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.predict-button {
+
+    width: 100%;
+
+    height: 56px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #5b45e6,
+            #4778f5
+        );
+
+    color: white;
+
+    font-size: 17px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 10px 25px rgba(75, 70, 220, 0.22);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+.predict-button:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 14px 30px rgba(75, 70, 220, 0.30);
+}
+
+
+.predict-button:active {
+
+    transform: translateY(0);
+}
+
+
+/* =========================
+   RESULT SECTION
+========================= */
+
+.result-section {
+
+    margin-top: 28px;
+
+    padding: 35px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eef2ff,
+            #f6f8ff
+        );
+
+    border: 1px solid #dce4ff;
+
+    border-radius: 22px;
+
+    text-align: center;
+}
+
+
+.result-heading {
+
+    font-size: 27px;
+
+    font-weight: 700;
+
+    color: #172554;
+
+    margin-bottom: 24px;
+}
+
+
+.result-card {
+
+    max-width: 650px;
+
+    margin: auto;
+
+    padding: 32px;
+
+    background: white;
+
+    border-radius: 18px;
+
+    border: 1px solid #e2e8f0;
+
+    box-shadow:
+        0 10px 30px rgba(60, 70, 150, 0.10);
+}
+
+
+.result-label {
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    color: #7c8aa5;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 10px;
+}
+
+
+.result-score {
+
+    font-size: 55px;
+
+    color: #5b45e6;
+
+    margin-bottom: 15px;
+
+    font-weight: 800;
+}
+
+
+.result-badge {
+
+    display: inline-block;
+
+    padding: 9px 18px;
+
+    border-radius: 30px;
+
+    background: #f0ebff;
+
+    color: #5b45e6;
+
+    font-size: 14px;
+
+    font-weight: 700;
+}
+
+
+.result-message {
+
+    margin-top: 18px;
+
+    color: #64748b;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+
+    padding: 25px 10px;
+
+    text-align: center;
+
+    color: #7c88a5;
+
+    font-size: 14px;
+}
+
+
+.divider {
+
+    margin: 0 10px;
+
+    color: #cbd5e1;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 850px) {
+
+    .hero-section {
+
+        padding: 28px;
+
+    }
+
+    .hero-section h1 {
+
+        font-size: 30px;
+
+    }
+
+    .hero-book {
+
+        font-size: 60px;
+
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 650px) {
+
+    body {
+
+        padding: 15px 10px;
+
+    }
+
+    .hero-section {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 20px;
+
+        padding: 25px;
+
+    }
+
+    .hero-content {
+
+        align-items: flex-start;
+
+    }
+
+    .hero-section h1 {
+
+        font-size: 25px;
+
+    }
+
+    .hero-section p {
+
+        font-size: 14px;
+
+    }
+
+    .hero-book {
+
+        align-self: center;
+
+        font-size: 55px;
+
+    }
+
+    .main-card {
+
+        padding: 22px 18px;
+
+    }
+
+    .section-heading {
+
+        align-items: flex-start;
+
+    }
+
+    .section-heading h2 {
+
+        font-size: 21px;
+
+    }
+
+    .form-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+
+    }
+
+    .result-section {
+
+        padding: 25px 15px;
+
+    }
+
+    .result-score {
+
+        font-size: 42px;
+
+    }
+
+    .footer {
+
+        font-size: 12px;
+
+    }
+}
